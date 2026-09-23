@@ -325,16 +325,23 @@ p { margin: 0; }
   margin: 0 auto 32px;
   border-radius: var(--radius-md);
   border: 2px solid var(--gold);
-  background: var(--navy-dark);
+  background: linear-gradient(160deg, #232D52, var(--navy-dark));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
 }
 
-.about-photo svg { color: #4B527A; width: 56px; height: 56px; }
-.about-photo span { color: #6C729A; font-size: 0.82rem; }
+.about-photo .initial {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.about-photo span.caption { color: #7D81A0; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
 
 .about-copy {
   max-width: 620px;
@@ -405,14 +412,19 @@ p { margin: 0; }
   height: 92px;
   border-radius: 50%;
   border: 2px solid var(--gold);
-  background: var(--soft-gray);
+  background: linear-gradient(160deg, var(--warm-white), var(--soft-gray));
   margin: 0 auto 18px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.avatar svg { width: 40px; height: 40px; color: #A9A296; }
+.avatar .initial {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--gold-dark);
+}
 
 .case-card h3 {
   color: var(--navy);
